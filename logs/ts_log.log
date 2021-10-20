@@ -1,0 +1,154 @@
+2021-10-01 19:21:03,597 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2021-10-01 19:21:05,672 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2021-10-01 19:21:09,089 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.4.2
+TS Home: C:\Users\narus\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\narus\Documents\be_prjt_files
+Temp directory: C:\PROGRA~1\KMSpico\temp
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 2024 M
+Python executable: c:\users\narus\appdata\local\programs\python\python39\python.exe
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\narus\Documents\be_prjt_files\deployment\model-store
+Initial Models: tagger=tag_generator.mar
+Log dir: C:\Users\narus\Documents\be_prjt_files\logs
+Metrics dir: C:\Users\narus\Documents\be_prjt_files\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\narus\Documents\be_prjt_files\deployment\model-store
+Model config: N/A
+2021-10-01 19:21:09,167 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: tag_generator.mar
+2021-10-01 19:21:09,182 [WARN ] main org.pytorch.serve.ModelServer - Failed to load model: tag_generator.mar
+org.pytorch.serve.archive.model.ModelNotFoundException: Model not found at: tag_generator.mar
+	at org.pytorch.serve.archive.model.ModelArchive.downloadModel(ModelArchive.java:75)
+	at org.pytorch.serve.wlm.ModelManager.createModelArchive(ModelManager.java:167)
+	at org.pytorch.serve.wlm.ModelManager.registerModel(ModelManager.java:133)
+	at org.pytorch.serve.ModelServer.initModelStore(ModelServer.java:242)
+	at org.pytorch.serve.ModelServer.startRESTserver(ModelServer.java:356)
+	at org.pytorch.serve.ModelServer.startAndWait(ModelServer.java:117)
+	at org.pytorch.serve.ModelServer.main(ModelServer.java:98)
+2021-10-01 19:21:09,214 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2021-10-01 19:21:09,527 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2021-10-01 19:21:09,527 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2021-10-01 19:21:09,530 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2021-10-01 19:21:09,531 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2021-10-01 19:21:09,532 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2021-10-01 19:26:19,046 [INFO ] nioEventLoopGroup-2-1 org.pytorch.serve.ModelServer - Inference model server stopped.
+2021-10-01 19:26:19,046 [INFO ] nioEventLoopGroup-2-2 org.pytorch.serve.ModelServer - Management model server stopped.
+2021-10-01 19:26:19,046 [INFO ] nioEventLoopGroup-2-1 org.pytorch.serve.ModelServer - Metrics model server stopped.
+2021-10-01 19:26:21,156 [INFO ] main org.pytorch.serve.ModelServer - Torchserve stopped.
+2021-10-01 19:35:17,088 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2021-10-01 19:35:17,780 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2021-10-01 19:35:18,123 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.4.2
+TS Home: C:\Users\narus\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\narus\Documents\be_prjt_files
+Temp directory: C:\PROGRA~1\KMSpico\temp
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 2024 M
+Python executable: c:\users\narus\appdata\local\programs\python\python39\python.exe
+Config file: logs\config\20211001192619046-shutdown.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\narus\Documents\be_prjt_files\deployment\model-store
+Initial Models: tagger=tag_generator.mar
+Log dir: C:\Users\narus\Documents\be_prjt_files\logs
+Metrics dir: C:\Users\narus\Documents\be_prjt_files\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\narus\Documents\be_prjt_files\deployment\model-store
+Model config: N/A
+2021-10-01 19:35:18,123 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20211001192619046-shutdown.cfg",
+  "modelCount": 0,
+  "created": 1633096579046,
+  "models": {}
+}
+2021-10-01 19:35:18,139 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20211001192619046-shutdown.cfg
+2021-10-01 19:35:18,233 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20211001192619046-shutdown.cfg validated successfully
+2021-10-01 19:35:18,233 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2021-10-01 19:35:18,233 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2021-10-01 19:35:18,463 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2021-10-01 19:35:18,463 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2021-10-01 19:35:18,463 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2021-10-01 19:35:18,463 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2021-10-01 19:35:18,463 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2021-10-01 19:39:58,349 [INFO ] nioEventLoopGroup-2-1 org.pytorch.serve.ModelServer - Inference model server stopped.
+2021-10-01 19:39:58,364 [INFO ] nioEventLoopGroup-2-2 org.pytorch.serve.ModelServer - Management model server stopped.
+2021-10-01 19:39:58,364 [INFO ] nioEventLoopGroup-2-1 org.pytorch.serve.ModelServer - Metrics model server stopped.
+2021-10-01 19:40:00,442 [INFO ] main org.pytorch.serve.ModelServer - Torchserve stopped.
+2021-10-01 19:41:46,384 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2021-10-01 19:41:47,043 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2021-10-01 19:41:47,355 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.4.2
+TS Home: C:\Users\narus\AppData\Local\Programs\Python\Python39\Lib\site-packages
+Current directory: C:\Users\narus\Documents\be_prjt_files
+Temp directory: C:\PROGRA~1\KMSpico\temp
+Number of GPUs: 1
+Number of CPUs: 8
+Max heap size: 2024 M
+Python executable: c:\users\narus\appdata\local\programs\python\python39\python.exe
+Config file: logs\config\20211001193958364-shutdown.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: C:\Users\narus\Documents\be_prjt_files\deployment\model-store
+Initial Models: tagger=tag_generator.mar
+Log dir: C:\Users\narus\Documents\be_prjt_files\logs
+Metrics dir: C:\Users\narus\Documents\be_prjt_files\logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 1
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: C:\Users\narus\Documents\be_prjt_files\deployment\model-store
+Model config: N/A
+2021-10-01 19:41:47,371 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20211001193958364-shutdown.cfg",
+  "modelCount": 0,
+  "created": 1633097398364,
+  "models": {}
+}
+2021-10-01 19:41:47,386 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20211001193958364-shutdown.cfg
+2021-10-01 19:41:47,386 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20211001193958364-shutdown.cfg validated successfully
+2021-10-01 19:41:47,386 [WARN ] main org.pytorch.serve.snapshot.SnapshotManager - Model snapshot is empty. Starting TorchServe without initial models.
+2021-10-01 19:41:47,386 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: NioServerSocketChannel.
+2021-10-01 19:41:47,621 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2021-10-01 19:41:47,621 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: NioServerSocketChannel.
+2021-10-01 19:41:47,621 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2021-10-01 19:41:47,621 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: NioServerSocketChannel.
+2021-10-01 19:41:47,621 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2021-10-01 20:10:18,246 [INFO ] nioEventLoopGroup-2-1 org.pytorch.serve.ModelServer - Inference model server stopped.
+2021-10-01 20:10:18,286 [INFO ] nioEventLoopGroup-2-2 org.pytorch.serve.ModelServer - Management model server stopped.
+2021-10-01 20:10:18,287 [INFO ] nioEventLoopGroup-2-1 org.pytorch.serve.ModelServer - Metrics model server stopped.
+2021-10-01 20:10:20,486 [INFO ] main org.pytorch.serve.ModelServer - Torchserve stopped.
